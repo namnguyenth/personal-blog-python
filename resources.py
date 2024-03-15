@@ -1,9 +1,9 @@
 from flask_restx import Resource, Namespace
 
-ns_blog = Namespace("api")
+ns = Namespace("api")
 
 
-@ns_blog.route("/blog")
-class Blog(Resource):
+@ns.route("/hello")
+class Hello(Resource):
     def get(self):
         return {"Hello": "Nam"}
