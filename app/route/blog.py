@@ -7,3 +7,7 @@ ns_blog = Namespace("api")
 class Blog(Resource):
     def get(self):
         return {"Hello": "Nam"}
+    def post(self):
+        return {"Hello": "Nam"}
+    def put(self):
+        return {"Hello": "Nam"}
